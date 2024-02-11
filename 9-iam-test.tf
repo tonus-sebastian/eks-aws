@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "test_oidc_assume_role_policy" {
+data "aws_iam_policy_document" "test-eks_oidc_assume_role_policy" {
   statement {
     actions = ["sts:AssumeRoleWithWebIdentity"]
     effect  = "Allow"
@@ -16,9 +16,9 @@ data "aws_iam_policy_document" "test_oidc_assume_role_policy" {
   }
 }
 
-resource "aws_iam_role" "test_oidc" {
-  assume_role_policy = data.aws_iam_policy_document.test_oidc_assume_role_policy.json
-  name               = "test-oidc"
+resource "aws_iam_role" "test-eks_oidc" {
+  assume_role_policy = data.aws_iam_policy_document.test-eks_oidc_assume_role_policy.json
+  name               = "test-eks-oidc"
 }
 
 resource "aws_iam_policy" "test-policy" {
@@ -38,10 +38,10 @@ resource "aws_iam_policy" "test-policy" {
 }
 
 resource "aws_iam_role_policy_attachment" "test_attach" {
-  role       = aws_iam_role.test_oidc.name
+  role       = aws_iam_role.test-eks_oidc.name
   policy_arn = aws_iam_policy.test-policy.arn
 }
 
 output "test_policy_arn" {
-  value = aws_iam_role.test_oidc.arn
+  value = aws_iam_role.test-eks_oidc.arn
 }
