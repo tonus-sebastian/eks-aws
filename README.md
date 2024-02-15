@@ -2,7 +2,7 @@
 <br>terraform apply</br>
 <br>terraform destroy</br>
 ```bash
-<br>terraform init</br>
+terraform init
 ```
 <img src="https://github.com/tonus-sebastian/eks-aws/assets/52061104/2f0ee42b-4efa-4314-acfa-5423d4490da9" width=50% height=50%>
 <img src="https://github.com/tonus-sebastian/eks-aws/assets/52061104/d1d91d90-81ce-4329-ba0a-5ad7d49b6de5" width=50% height=50%>
