@@ -9,6 +9,7 @@ terraform apply
 <img src="https://github.com/tonus-sebastian/eks-aws/assets/52061104/13a19bad-1eab-42bd-8ea1-74df7f0320c6" width=50% height=50%>
 
 ```bash
+aws eks --region us-east-2 describe-cluster --name demo=eks --query cluster.status
 aws eks --region us-east-2 update-kubeconfig --name demo-eks
 ```
 
