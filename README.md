@@ -11,3 +11,7 @@
 
 
 ![eks-2(https://github.com/tonus-sebastian/eks-aws/assets/52061104/2f0ee42b-4efa-4314-acfa-5423d4490da9 = 250x250])
+
+
+
+<img src="https://github.com/tonus-sebastian/eks-aws/assets/52061104/2f0ee42b-4efa-4314-acfa-5423d4490da9" width=50% height=50%>
